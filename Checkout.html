@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<style type="text/css">
+		.center-screen {
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  align-items: center;
+			  text-align: center;
+			  min-height: 100vh;
+			}
+
+		.middle-div {
+			background-color: white;
+			opacity: 0.8;
+			border: 3px solid red;
+			border-radius: 10px;
+			width: 400px;
+		}
+
+		td{
+			width: 100px;
+			text-align: left
+		}
+	</style>
+</head>
+<body style="background-image: url(https://images.askmen.com/1080x540/2017/01/25-043929-can_you_make_chinese_takeout_healthy.jpg);">
+
+	<div class="center-screen">
+		<div class="middle-div">
+			<div>
+				<h1>Checkout</h1>
+			</div>
+			<div style="text-align: center;">
+				<table style="margin: 0px auto;">
+					<tr>
+						<td>Total</th>
+						<td>12.69</th>
+					</tr>
+					<tr>
+						<td>Payment Method</td>
+						<td>
+							<select>
+								<option>Credit</option>
+								<option>Debit</option>
+								<option>Cash On Delivery</option>
+							</select>
+						</td>
+						
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td><input type="text" name="address"></td>
+						
+					</tr>
+					<tr>
+						<td colspan="2"><button>Place Order</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
