@@ -1,59 +1,61 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
 <head>
-	<title>Menu</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<style type="text/css">
-		.center-screen {
-			  display: flex;
-			  flex-direction: column;
-			  justify-content: center;
-			  align-items: center;
-			  text-align: center;
-			  min-height: 100vh;
-			}
-
-		.middle-div {
-			background-color: white;
-			opacity: 0.8;
-			border: 3px solid red;
-			border-radius: 10px;
-			width: 400px;
-		}
-
-		th {
-			width: 100px;
-		}
-	</style>
+   <title>Menu</title>
+   <style type="text/css">
+         .header {
+   padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+button {
+   border: 0;
+   background: #FF8633;
+   height: 50px;
+   width: 150px;
+}
+table {
+   margin-left: auto;
+   margin-right: auto;
+}
+   
+   </style>
 </head>
-<body style="background-image: url(https://images.askmen.com/1080x540/2017/01/25-043929-can_you_make_chinese_takeout_healthy.jpg);">
+<body>
+   <div class="header">
+      <span>ORDER FOOD IN EXCHANGE FOR MONEY Inc.</span>
+      <nav>
+         <button>HOME</button>
+         <button>RESTAURANTS</button>
+      </nav>
+   </div>
+   <table>
+      <tr>
+         <td>
+            <header>
+               <img src="food.jpg">
+            </header>
+         </td>
+         <td>
+            <h5>Spaghetti</h5>
+            <p><b>$45.23</b> <br>5759 calories</p>
+            <p>From the hills of Parma, in northen Italy, to the dining tables of Mamma Teresa’s in Ottawa, The Boselli Family brought the best of traditional Italian cuisine.</p>
+            <button>Add to Order</button>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <header>
+               <img src="food.jpg">
+            </header>
+         </td>
+         <td>
+            <h5>Meat</h5>
+            <p><b>$99.00</b><br>4421 calories<br></p>
+            <p> The meat has a 60% chance of not killing you instantly.</p>
+            <button>Add to Order</button>
+         </td>
+      </tr>
+   </table>
 
-	<div class="center-screen">
-		<div class="middle-div">
-			<div>
-				<h1>Menu</h1>
-			</div>
-			<div style="text-align: center;">
-				<table style="margin: 0px auto;">
-					<tr>
-						<th>Smoothie</th>
-						<th>2.99</th>
-						<th><button><i class="fas fa-plus"></i></button></th>
-					</tr>
-					<tr>
-						<th>Pie</th>
-						<th>5.99</th>
-						<th><button><i class="fas fa-plus"></i></button></th>
-					</tr>
-					<tr>
-						<th>Pizza</th>
-						<th>3.99</th>
-						<th><button><i class="fas fa-plus"></i></button></th>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</div>
-
-</body>
-</html>

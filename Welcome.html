@@ -6,14 +6,29 @@
 		.center-screen {
 			  display: flex;
 			  flex-direction: column;
-			  justify-content: center;
+			  justify-content: top;
 			  align-items: center;
 			  text-align: center;
 			  min-height: 100vh;
+			  margin-top: 50px;
 
 		}
-
+		         .header {
+   padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+button {
+   border: 0;
+   background: #FF8633;
+   height: 50px;
+   width: 150px;
+}
 		.middle-div {
+			margin-left: auto;
+			margin-right: auto;
 			background-color: white;
 			opacity: 0.8;
 			border: 3px solid red;
@@ -21,8 +36,14 @@
 		}
 	</style>
 </head>
-<body style="background-image: url(https://s.hdnux.com/photos/77/27/01/16609374/7/920x920.jpg); height: 100%; overflow: hidden;" >
-
+<body>
+	   <div class="header">
+      <span>ORDER FOOD IN EXCHANGE FOR MONEY Inc.</span>
+      <nav>
+         <button>HOME</button>
+         <button>RESTAURANTS</button>
+      </nav>
+   </div>
 	<div class="center-screen"  >
 		<div class="middle-div">
 			<img src="http://www.arcticcorridors.ca/wp-content/uploads/2015/12/University_of_Ottawa_Logo.svg.png" style="height: 100px; width: 150px">
