@@ -41,6 +41,10 @@
 	   height: 50px;
 	   width: 150px;
 	}
+
+	.security-code{
+		width: 25px;
+	}
 	</style>
 </head>
 <body>
@@ -60,7 +64,7 @@
 				<table style="margin: 0px auto;">
 					<tr>
 						<td>Total</th>
-						<td>12.69</th>
+						<td>$12.69</th>
 					</tr>
 					<tr>
 						<td>Payment Method</td>
@@ -75,8 +79,16 @@
 					</tr>
 					<tr>
 						<td>Address</td>
-						<td><input type="text" name="address"></td>
+						<td><input type="text" name="address" placeholder="40 Deighton cres"></td>
 						
+					</tr>
+					<tr>
+						<td>Card Number</td>
+						<td><input type="text" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX"></td>
+					</tr>
+					<tr>
+						<td>Security Code</td>
+						<td><input type="text" placeholder="000" class="security-code"></td>
 					</tr>
 					<tr>
 						<td colspan="2"><button>Place Order</button></td>
