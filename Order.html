@@ -18,8 +18,13 @@ button {
    border: 0;
    background: #FF8633;
    height: 50px;
-   width: 150px;
+   width: 200px;
 }
+
+table {
+  width: 350px;
+}
+
 .column1 {
   float: left;
   width: 20%;
@@ -48,10 +53,9 @@ button {
    <div class="header">
       <span>ORDER FOOD IN EXCHANGE FOR MONEY Inc.</span>
       <nav>
-         <a href="Welcome.html">HOME</a>
-         <a href="restaurants.html">RESTAURANTS</a>
-         <a href="Order.html">ORDER</a>
-
+         <a href="Welcome.html"><button>HOME</button></a>
+         <a href="restaurants.html"><button>RESTAURANTS</button></a>
+         <a href="Order.html"><button>ORDER</button></a>
       </nav>
    </div>
   <div class="column1">
@@ -65,9 +69,8 @@ button {
   </table>
   </div>
   <div class="column2">
-     <p class ="list">Subtotal: $522.25<br>Tax: $8858.24<br>Total price: $99999</p>
+     <p class ="list">Subtotal: <b id="subtotal"></b><br>Tax: <b id="tax"></b><br>Total price: <b id="total"></b></p>
      <button class="checkout-btn">CHECKOUT</button>
-     <button>CANCEL ORDER</button>
   </div>
   <div id="myModal" class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">

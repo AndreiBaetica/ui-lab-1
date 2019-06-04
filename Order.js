@@ -13,6 +13,21 @@ for (const [key, value] of Object.entries(food)) {
 	}
 }
 
+subtotal = 0;
+for(const [key, value] of Object.entries(food)){
+	subtotal += parseInt(localStorage.getItem(key))* value;
+}
+subtotal = Math.round(subtotal * 100) / 100;
+$("#subtotal").text("$" + subtotal);
+
+tax = Math.round((subtotal * 0.2) * 100) / 100;
+$("#tax").text("$" + tax);
+
+total = subtotal + tax;
+localStorage.setItem("total", total);
+$("#total").text("$" + total);
+
+
 $(".remove-btn").click(function(){
 	
 		row = $(this).closest("tr");
@@ -24,11 +39,6 @@ $(".remove-btn").click(function(){
 })
 
 $(".checkout-btn").click(function(){
-	total = 0;
-	for(const [key, value] of Object.entries(food)){
-		total += parseInt(localStorage.getItem(key))* value;
-	}
-	localStorage.setItem("total", total);
 	window.location = "Checkout.html"
 })
 
@@ -37,4 +47,3 @@ $(".remove-btn-confirm").click(function(){
 	localStorage.setItem(name, 0);
 	$('#myModal').modal('toggle');
 });
-	

@@ -42,7 +42,7 @@
 	   border: 0;
 	   background: #FF8633;
 	   height: 50px;
-	   width: 150px;
+  	 width: 200px;
 	}
 
 	.security-code{
@@ -54,9 +54,9 @@
 	 <div class="header">
       <span>ORDER FOOD IN EXCHANGE FOR MONEY Inc.</span>
       <nav>
-         <a href="Welcome.html">HOME</a>
-         <a href="restaurants.html">RESTAURANTS</a>
-         <a href="Order.html">ORDER</a>
+         <a href="Welcome.html"><button>HOME</button></a>
+         <a href="restaurants.html"><button>RESTAURANTS</button></a>
+         <a href="Order.html"><button>ORDER</button></a>
       </nav>
    </div>
 	<div class="center-screen">
@@ -65,7 +65,7 @@
 				<h1>Checkout</h1>
 			</div>
 			<div style="text-align: center;">
-				<table style="margin: 0px auto;">
+				<table style="margin: 0px auto;" id="payment-method">
 					<tr>
 						<td >Total</th>
 						<td id="total"></th>
@@ -73,14 +73,16 @@
 					<tr>
 						<td>Payment Method</td>
 						<td>
-							<select>
-								<option>Credit</option>
-								<option>Debit</option>
-								<option>Cash On Delivery</option>
+							<select id="payment">
+								<option value="1">Credit</option>
+								<option value="1">Debit</option>
+								<option value="0">Cash On Delivery</option>
 							</select>
 						</td>
 						
 					</tr>
+				</table>
+				<table style="margin: 0px auto;" id="card-info">
 					<tr>
 						<td>First Name</td>
 						<td><input type="text" name="address"></td>
@@ -100,6 +102,8 @@
 						<td style="padding-bottom: 20px">Security Code</td>
 						<td style="padding-bottom: 20px"><input type="text" placeholder="000" class="security-code"></td>
 					</tr>
+					</table>
+					<table style="margin: 0px auto;" id="address">
 					<tr>
 						<td>Province</td>
 						<td><input type="text" name="province" placeholder="ontario"></td>
